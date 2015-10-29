@@ -1,8 +1,7 @@
 var http = require('http'),
     wechat = require('node-wechat');
 var PORT = 3030;
-wechat.token = 'your_token';
-
+wechat.token = 'mengxt';
 http.createServer(function (req, res) {
   //检验 token
   wechat.checkSignature(req, res);
@@ -34,6 +33,6 @@ http.createServer(function (req, res) {
     wechat.send(msg);
   });
 
-}).listen(PORT,"127.0.0.1",function(){
+}).listen(PORT,function(){
     console.log('http server is started on port'+PORT)
 });
