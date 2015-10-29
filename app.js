@@ -4,6 +4,7 @@ var http = require('http'),
 wechat.token = 'mengxt';
 
 http.createServer(function (req, res) {
+  console.log(req);
   //检验 token
   wechat.checkSignature(req, res);
   //预处理
