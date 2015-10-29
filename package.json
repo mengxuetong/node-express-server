@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/mengxuetong/node-express-server#readme",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "node-wechat": "^0.1.0"
   }
 }
